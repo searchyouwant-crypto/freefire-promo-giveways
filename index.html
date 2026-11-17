@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Fire Zone</title>
+
+<title>Free Fire Free Diamonds and Promos</title>
+
+<meta name="description" content="Free Fire promo code updates, giveaways and latest news.">
+<meta name="theme-color" content="#0b0b0f">
 
 <style>
 :root {
@@ -52,6 +56,10 @@ button,input {
  font:inherit;
 }
 
+button {
+ cursor:pointer;
+}
+
 .container {
  width:min(1100px,92%);
  margin:auto;
@@ -94,6 +102,10 @@ nav a {
  font-weight:bold;
 }
 
+nav a:hover {
+ color:var(--gold);
+}
+
 .theme,.menu {
  padding:9px 12px;
  background:var(--panel2);
@@ -109,7 +121,11 @@ nav a {
 
 .hero {
  padding:75px 0;
- background:radial-gradient(ellipse at 80% 20%,#ff8a002b,transparent 45%);
+ background:radial-gradient(
+  ellipse at 80% 20%,
+  #ff8a002b,
+  transparent 45%
+ );
 }
 
 .hero-grid {
@@ -157,7 +173,11 @@ p {
 }
 
 .primary {
- background:linear-gradient(120deg,var(--accent),var(--gold));
+ background:linear-gradient(
+  120deg,
+  var(--accent),
+  var(--gold)
+ );
  color:#17100a;
 }
 
@@ -175,7 +195,11 @@ p {
 }
 
 .panel {
- background:linear-gradient(140deg,var(--panel2),var(--panel));
+ background:linear-gradient(
+  140deg,
+  var(--panel2),
+  var(--panel)
+ );
 }
 
 .panel .icon {
@@ -250,6 +274,7 @@ section {
 
 .form-card button:disabled {
  opacity:.6;
+ cursor:not-allowed;
 }
 
 .note,.status {
@@ -276,6 +301,7 @@ section {
  justify-content:center;
  background:var(--panel);
  color:var(--muted);
+ padding:15px;
 }
 
 .ad strong {
@@ -309,7 +335,7 @@ footer p {
  margin-top:14px;
 }
 
-/* Promo Code Design */
+/* PROMO CODE DESIGN */
 
 .promo-list {
  display:grid;
@@ -335,23 +361,41 @@ footer p {
  letter-spacing:1px;
 }
 
-.copy-btn {
+.promo-actions {
+ display:flex;
+ gap:8px;
+ flex-wrap:wrap;
+}
+
+.copy-btn,.confirm-btn {
  flex:0 0 auto;
  padding:9px 14px;
  border:0;
  border-radius:8px;
- background:linear-gradient(120deg,var(--accent),var(--gold));
- color:#17100a;
  font-weight:bold;
  cursor:pointer;
 }
 
-.copy-btn:disabled {
+.copy-btn {
+ background:linear-gradient(
+  120deg,
+  var(--accent),
+  var(--gold)
+ );
+ color:#17100a;
+}
+
+.confirm-btn {
+ background:#27864b;
+ color:white;
+}
+
+.copy-btn:disabled,.confirm-btn:disabled {
  opacity:.6;
  cursor:not-allowed;
 }
 
-/* Popup Design */
+/* POPUP */
 
 .modal {
  display:none;
@@ -388,6 +432,12 @@ footer p {
  font-size:14px;
 }
 
+.close-btn {
+ margin-top:12px;
+}
+
+/* MOBILE RESPONSIVE */
+
 @media(max-width:850px) {
  .hero-grid {
   grid-template-columns:1fr;
@@ -395,6 +445,7 @@ footer p {
 }
 
 @media(max-width:650px) {
+
  .navbar {
   flex-wrap:wrap;
   padding:12px 0;
@@ -432,24 +483,33 @@ footer p {
   flex-wrap:wrap;
  }
 
- .copy-btn {
+ .promo-actions {
   width:100%;
  }
+
+ .copy-btn,.confirm-btn {
+  flex:1;
+ }
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
  <div class="container navbar">
 
   <a class="logo" href="#home">
-   FREE FIRE <span>ZONE</span>
+   FREE FIRE <span>FREE DIAMONDS AND PROMOS</span>
   </a>
 
-  <button class="menu" id="menuBtn" type="button"
-   aria-label="Toggle navigation" aria-expanded="false">
+  <button class="menu" id="menuBtn"
+   type="button"
+   aria-label="Toggle navigation"
+   aria-expanded="false">
    ☰
   </button>
 
@@ -462,7 +522,10 @@ footer p {
    <a href="#contact">Contact</a>
   </nav>
 
-  <button class="theme" id="themeBtn">☀ / ☾</button>
+  <button class="theme" id="themeBtn"
+   type="button">
+   ☀ / ☾
+  </button>
 
  </div>
 </header>
@@ -472,20 +535,28 @@ footer p {
 <!-- HOME -->
 
 <section class="hero" id="home">
+
  <div class="container hero-grid">
 
   <div>
-   <div class="eyebrow">FREE FIRE PROMO & GIVEAWAY</div>
+
+   <div class="eyebrow">
+    FREE FIRE FREE DIAMONDS AND PROMOS
+   </div>
 
    <h1>
-    LEVEL UP YOUR <span>FREE FIRE</span> EXPERIENCE
+    LEVEL UP YOUR
+    <span>FREE FIRE</span>
+    EXPERIENCE
    </h1>
 
    <p>
-    Promo code updates, giveaway announcements and Free Fire news in one place.
+    Promo code updates, giveaway announcements
+    and Free Fire news in one place.
    </p>
 
    <div class="actions">
+
     <a class="btn primary" href="#giveaway">
      Join Free Giveaway
     </a>
@@ -493,61 +564,91 @@ footer p {
     <a class="btn secondary" href="#news">
      🔥 Free Fire Hot News
     </a>
+
    </div>
+
   </div>
 
   <div class="panel">
+
    <div class="icon">🎮</div>
+
    <h2>Welcome, Survivors!</h2>
 
    <p>
     Stay updated with announcements and events.
     Always verify information through official sources.
    </p>
+
   </div>
 
  </div>
+
 </section>
 
 
 <!-- PROMO CODES -->
 
 <section id="codes">
+
  <div class="container">
 
   <div class="heading">
+
    <h2>🎁 Promo Codes</h2>
 
    <p>
     Latest available Free Fire promo codes.
     Copy a code and redeem it through the official website.
    </p>
+
   </div>
 
   <div class="card">
 
-   <p id="promoStatus" class="status" role="status">
+   <p id="promoStatus"
+    class="status"
+    role="status">
     Loading promo codes...
    </p>
 
-   <div id="promoCodeList" class="promo-list" aria-live="polite">
+   <div id="promoCodeList"
+    class="promo-list"
+    aria-live="polite">
+
     <p>Please wait...</p>
+
+   </div>
+
+   <div class="ad">
+
+    <strong>ADVERTISEMENT</strong>
+
+    <p>Advertisement space</p>
+
    </div>
 
   </div>
 
  </div>
+
 </section>
 
 
 <!-- GIVEAWAY -->
 
 <section id="giveaway">
+
  <div class="container">
 
   <div class="heading">
+
    <h2>🏆 Free Giveaway</h2>
-   <p>Enter your Free Fire Player UID.</p>
+
+   <p>
+    Enter your Free Fire Player UID.
+   </p>
+
   </div>
 
   <div class="form-card">
@@ -556,7 +657,9 @@ footer p {
 
    <form id="giveawayForm">
 
-    <label for="uid">Free Fire Player UID</label>
+    <label for="uid">
+     Free Fire Player UID
+    </label>
 
     <input
      id="uid"
@@ -570,79 +673,865 @@ footer p {
      required
     >
 
-    <button class="btn primary" type="submit" id="submitBtn">
+    <button
+     class="btn primary"
+     type="submit"
+     id="submitBtn">
+
      Submit UID
+
     </button>
 
    </form>
 
-   <p class="status" id="formStatus" role="status"></p>
+   <p class="status"
+    id="formStatus"
+    role="status">
+   </p>
 
    <p class="note">
     Never enter your Free Fire password or OTP.
    </p>
 
   </div>
+
  </div>
+
 </section>
 
 
 <!-- NEWS -->
 
 <section id="news">
+
  <div class="container">
 
   <div class="heading">
+
    <h2>🔥 Free Fire Hot News</h2>
 
    <p>
-    News and event updates. Check official announcements for confirmed details.
+    News and event updates. Check official announcements
+    for confirmed details.
    </p>
+
   </div>
 
   <div class="grid" id="newsGrid">
 
    <article class="card">
+
     <div class="news-icon">📢</div>
-    <span class="tag">OFFICIAL UPDATES</span>
+
+    <span class="tag">
+     OFFICIAL UPDATES
+    </span>
 
     <h3>Game Announcements</h3>
 
     <p>
-     Visit the official Free Fire website for confirmed announcements.
+     Visit the official Free Fire website for
+     confirmed announcements.
     </p>
 
     <p>
      <a class="btn secondary"
       href="https://ff.garena.com/"
       target="_blank"
-      rel="noopener">
+      rel="noopener noreferrer">
+
       Official Website ↗
+
      </a>
     </p>
+
    </article>
 
+
    <article class="card">
+
     <div class="news-icon">🎉</div>
-    <span class="tag">EVENTS</span>
+
+    <span class="tag">
+     EVENTS
+    </span>
 
     <h3>Upcoming Events</h3>
 
     <p>
-     Event dates and rewards will be added after confirmation.
+     Event dates and rewards will be added
+     after confirmation.
     </p>
 
     <p>
      <a class="btn secondary"
       href="https://ff.garena.com/"
       target="_blank"
-      rel="noopener">
+      rel="noopener noreferrer">
+
       Check Updates ↗
+
      </a>
     </p>
+
    </article>
 
+
    <article class="card">
+
     <div class="news-icon">📰</div>
-    <s
-     
+
+    <span class="tag">
+     PROMO UPDATES
+    </span>
+
+    <h3>Redeem Codes</h3>
+
+    <p>
+     Check the latest promo codes and redeem
+     them on the official redemption website.
+    </p>
+
+    <p>
+     <a class="btn secondary"
+      href="https://reward.ff.garena.com/"
+      target="_blank"
+      rel="noopener noreferrer">
+
+      Redeem Codes ↗
+
+     </a>
+    </p>
+
+   </article>
+
+  </div>
+
+ </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+ <div class="container">
+
+  <div class="heading">
+
+   <h2>About Us</h2>
+
+   <p>
+    Free Fire Free Diamonds and Promos shares
+    Free Fire news, promo code updates and giveaway
+    information.
+   </p>
+
+  </div>
+
+ </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+ <div class="container">
+
+  <div class="heading">
+
+   <h2>Contact</h2>
+
+   <p>
+    For questions and suggestions, contact the website owner.
+   </p>
+
+  </div>
+
+ </div>
+
+</section>
+
+</main>
+
+
+<!-- PROMO CONFIRM POPUP -->
+
+<div class="modal" id="promoModal">
+
+ <div class="modal-box">
+
+  <h2>🎉 Thank You!</h2>
+
+  <p>
+   Your promo code has been copied.
+   You can now continue to the next step.
+  </p>
+
+  <div class="ad">
+
+   <strong>ADVERTISEMENT</strong>
+
+   <p>Advertisement space</p>
+
+  </div>
+
+  <button
+   class="btn primary close-btn"
+   id="closeModal"
+   type="button">
+
+   Close
+
+  </button>
+
+ </div>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+ <div class="container">
+
+  <div class="footer-row">
+
+   <div>
+
+    <h3>Free Fire Free Diamonds and Promos</h3>
+
+    <p>
+     Free Fire updates and promo information.
+    </p>
+
+   </div>
+
+   <div class="footer-links">
+
+    <a href="#home">Home</a>
+
+    <a href="#codes">Promo Codes</a>
+
+    <a href="#about">About</a>
+
+    <a href="#contact">Contact</a>
+
+   </div>
+
+  </div>
+
+  <p>
+   This is an unofficial fan website.
+   Not affiliated with Garena or Free Fire.
+  </p>
+
+  <p>
+   © 2026 Free Fire Free Diamonds and Promos.
+  </p>
+
+ </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* ==================================
+   API CONFIGURATION
+================================== */
+
+// If frontend and backend are on the same domain,
+// keep this as an empty string.
+//
+// If your Cloudflare Worker has a separate URL,
+// put that URL here.
+//
+// Example:
+// const API_BASE_URL = "https://your-worker.workers.dev";
+
+const API_BASE_URL = "";
+
+function apiURL(path) {
+ return API_BASE_URL + path;
+}
+
+
+/* ==================================
+   MOBILE MENU
+================================== */
+
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("nav");
+
+menuBtn.addEventListener("click", () => {
+
+ const isOpen = nav.classList.toggle("open");
+
+ menuBtn.setAttribute(
+  "aria-expanded",
+  String(isOpen)
+ );
+
+});
+
+
+/* CLOSE MOBILE MENU AFTER CLICK */
+
+nav.querySelectorAll("a").forEach(link => {
+
+ link.addEventListener("click", () => {
+
+  nav.classList.remove("open");
+
+  menuBtn.setAttribute("aria-expanded","false");
+
+ });
+
+});
+
+
+/* ==================================
+   THEME SWITCH
+================================== */
+
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", () => {
+
+ document.body.classList.toggle("light");
+
+});
+
+
+/* ==================================
+   PROMO CODE SYSTEM
+================================== */
+
+const promoList =
+ document.getElementById("promoCodeList");
+
+const promoStatus =
+ document.getElementById("promoStatus");
+
+
+async function loadPromoCodes() {
+
+ promoStatus.textContent =
+  "Loading latest promo codes...";
+
+ promoStatus.className = "status";
+
+ try {
+
+  const response = await fetch(
+   apiURL("/api/promo-codes"),
+   {
+    method:"GET",
+    cache:"no-store"
+   }
+  );
+
+  if (!response.ok) {
+
+   throw new Error("Promo API request failed");
+
+  }
+
+  const data = await response.json();
+
+  // Backend response uses promoCodes.
+  const codes = Array.isArray(data)
+   ? data
+   : data.promoCodes || data.codes;
+
+  if (!data.success && !Array.isArray(data)) {
+
+   throw new Error("Promo API returned an error");
+
+  }
+
+  if (!Array.isArray(codes) || codes.length === 0) {
+
+   promoList.innerHTML =
+    "<p>No promo codes available right now.</p>";
+
+   promoStatus.textContent =
+    "No promo codes available. Please check again later.";
+
+   promoStatus.className = "status error";
+
+   return;
+
+  }
+
+  promoList.innerHTML = "";
+
+  codes.slice(0,10).forEach(item => {
+
+   const code = typeof item === "string"
+    ? item
+    : item.code;
+
+   if (!code) return;
+
+   const row = document.createElement("div");
+
+   row.className = "promo-item";
+
+
+   /* CODE TEXT */
+
+   const codeText = document.createElement("span");
+
+   codeText.className = "promo-code-text";
+
+   codeText.textContent = code;
+
+
+   /* ACTION BUTTONS */
+
+   const actions = document.createElement("div");
+
+   actions.className = "promo-actions";
+
+
+   /* COPY BUTTON */
+
+   const copyBtn = document.createElement("button");
+
+   copyBtn.type = "button";
+
+   copyBtn.className = "copy-btn";
+
+   copyBtn.textContent = "Copy";
+
+
+   /* CONFIRM BUTTON */
+
+   const confirmBtn = document.createElement("button");
+
+   confirmBtn.type = "button";
+
+   confirmBtn.className = "confirm-btn";
+
+   confirmBtn.textContent = "Confirm";
+
+   confirmBtn.hidden = true;
+
+
+   /* COPY ACTION */
+
+   copyBtn.addEventListener("click", async () => {
+
+    try {
+
+     await navigator.clipboard.writeText(code);
+
+     copyBtn.textContent = "Copied!";
+
+     confirmBtn.hidden = false;
+
+    } catch (error) {
+
+     promoStatus.textContent =
+      "Copy failed. Please copy the code manually.";
+
+     promoStatus.className = "status error";
+
+    }
+
+   });
+
+
+   /* CONFIRM ACTION */
+
+   confirmBtn.addEventListener("click", () => {
+
+    document
+     .getElementById("promoModal")
+     .classList.add("show");
+
+   });
+
+
+   actions.appendChild(copyBtn);
+
+   actions.appendChild(confirmBtn);
+
+   row.appendChild(codeText);
+
+   row.appendChild(actions);
+
+   promoList.appendChild(row);
+
+  });
+
+
+  promoStatus.textContent =
+   "Latest promo codes loaded. Please verify before redeeming.";
+
+  promoStatus.className = "status success";
+
+
+ } catch (error) {
+
+  console.error("Promo loading error:",error);
+
+  promoStatus.textContent =
+   "Promo codes are temporarily unavailable. Please try again later.";
+
+  promoStatus.className = "status error";
+
+  promoList.innerHTML =
+   "<p>Unable to load promo codes. Please try again later.</p>";
+
+ }
+
+}
+
+
+/* ==================================
+   CLOSE POPUP
+================================== */
+
+const closeModal =
+ document.getElementById("closeModal");
+
+const promoModal =
+ document.getElementById("promoModal");
+
+
+closeModal.addEventListener("click", () => {
+
+ promoModal.classList.remove("show");
+
+});
+
+
+/* CLOSE POPUP WHEN CLICKING OUTSIDE */
+
+promoModal.addEventListener("click", event => {
+
+ if (event.target === promoModal) {
+
+  promoModal.classList.remove("show");
+
+ }
+
+});
+
+
+/* ==================================
+   GIVEAWAY FORM
+================================== */
+
+const giveawayForm =
+ document.getElementById("giveawayForm");
+
+const formStatus =
+ document.getElementById("formStatus");
+
+const submitBtn =
+ document.getElementById("submitBtn");
+
+
+giveawayForm.addEventListener("submit", async event => {
+
+ event.preventDefault();
+
+ const uid =
+  document.getElementById("uid").value.trim();
+
+
+ /* VALIDATE UID */
+
+ if (!/^[0-9]{6,15}$/.test(uid)) {
+
+  formStatus.textContent =
+   "Please enter a valid Free Fire UID.";
+
+  formStatus.className = "status error";
+
+  return;
+
+ }
+
+
+ submitBtn.disabled = true;
+
+ submitBtn.textContent = "Submitting...";
+
+ formStatus.textContent = "";
+
+
+ try {
+
+  const response = await fetch(
+   apiURL("/api/giveaway"),
+   {
+    method:"POST",
+
+    headers:{
+     "Content-Type":"application/json"
+    },
+
+    body:JSON.stringify({
+     uid:uid
+    })
+   }
+  );
+
+
+  const data = await response.json();
+
+
+  if (!response.ok || !data.success) {
+
+   throw new Error(
+    data.error || "Giveaway submission failed"
+   );
+
+  }
+
+
+  formStatus.textContent =
+   data.message || "Your giveaway entry has been saved.";
+
+  formStatus.className = "status success";
+
+  giveawayForm.reset();
+
+
+ } catch (error) {
+
+  console.error("Giveaway error:",error);
+
+  formStatus.textContent =
+   error.message || "Could not submit your UID. Please try again.";
+
+  formStatus.className = "status error";
+
+
+ } finally {
+
+  submitBtn.disabled = false;
+
+  submitBtn.textContent = "Submit UID";
+
+ }
+
+});
+
+
+/* ==================================
+   NEWS FROM BACKEND
+================================== */
+
+async function loadNews() {
+
+ const newsGrid =
+  document.getElementById("newsGrid");
+
+ try {
+
+  const response = await fetch(
+   apiURL("/api/news"),
+   {
+    method:"GET",
+    cache:"no-store"
+   }
+  );
+
+  if (!response.ok) {
+
+   throw new Error("News API request failed");
+
+  }
+
+  const data = await response.json();
+
+  if (
+   !data.success ||
+   !Array.isArray(data.news) ||
+   data.news.length === 0
+  ) {
+
+   return;
+
+  }
+
+
+  newsGrid.innerHTML = "";
+
+
+  data.news.forEach(item => {
+
+   const card = document.createElement("article");
+
+   card.className = "card";
+
+
+   const icon = document.createElement("div");
+
+   icon.className = "news-icon";
+
+   icon.textContent = "📰";
+
+
+   const tag = document.createElement("span");
+
+   tag.className = "tag";
+
+   tag.textContent = "FREE FIRE NEWS";
+
+
+   const title = document.createElement("h3");
+
+   title.textContent =
+    item.title || "Free Fire News";
+
+
+   const description = document.createElement("p");
+
+   description.textContent =
+    item.description || "";
+
+
+   card.appendChild(icon);
+
+   card.appendChild(tag);
+
+   card.appendChild(title);
+
+   card.appendChild(description);
+
+
+   if (item.source_url) {
+
+    try {
+
+     const sourceURL = new URL(item.source_url);
+
+     if (
+      sourceURL.protocol === "https:" ||
+      sourceURL.protocol === "http:"
+     ) {
+
+      const link = document.createElement("a");
+
+      link.href = sourceURL.href;
+
+      link.target = "_blank";
+
+      link.rel = "noopener noreferrer";
+
+      link.className = "btn secondary";
+
+      link.textContent = "Read More ↗";
+
+      card.appendChild(link);
+
+     }
+
+    } catch (error) {
+
+     console.warn("Invalid news URL:",item.source_url);
+
+    }
+
+   }
+
+
+   newsGrid.appendChild(card);
+
+  });
+
+
+ } catch (error) {
+
+  console.error("News loading failed:",error);
+
+ }
+
+}
+
+
+/* ==================================
+   BACKEND HEALTH CHECK
+================================== */
+
+async function checkBackend() {
+
+ try {
+
+  const response = await fetch(
+   apiURL("/api/health"),
+   {
+    method:"GET",
+    cache:"no-store"
+   }
+  );
+
+  if (!response.ok) {
+
+   throw new Error("Backend is not responding");
+
+  }
+
+  const data = await response.json();
+
+  console.log("Backend status:",data);
+
+ } catch (error) {
+
+  console.error("Backend connection failed:",error);
+
+ }
+
+}
+
+
+/* ==================================
+   INITIAL PAGE LOAD
+================================== */
+
+loadPromoCodes();
+
+loadNews();
+
+checkBackend();
+
+
+/* ==================================
+   AUTOMATIC FRONTEND REFRESH
+================================== */
+
+// Refresh promo codes every 5 minutes.
+
+setInterval(() => {
+
+ loadPromoCodes();
+
+}, 5 * 60 * 1000);
+
+
+// Refresh news every 15 minutes.
+
+setInterval(() => {
+
+ loadNews();
+
+}, 15 * 60 * 1000);
+
+
+</script>
+
+</body>
+</html>
